@@ -51,3 +51,14 @@
 {"level":"info","message":"::1 - - [03/Jan/2026:01:11:04 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"corecrm-api"}
 {"level":"info","message":"::1 - - [03/Jan/2026:01:11:34 +0000] \"GET /health HTTP/1.1\" 200 78 \"-\" \"-\"","service":"corecrm-api"}
 {"level":"info","message":"::1 - - [03/Jan/2026:01:12:05 +0000] \"GET /health HTTP/1.1\" 200 78 \"-\" \"-\"","service":"corecrm-api"}
+{"level":"info","message":"::1 - - [03/Jan/2026:01:21:32 +0000] \"GET /health HTTP/1.1\" 200 75 \"-\" \"-\"","service":"corecrm-api"}
+{"level":"info","message":"::ffff:192.168.65.1 - - [03/Jan/2026:01:21:39 +0000] \"GET /api/users/ HTTP/1.1\" 401 72 \"-\" \"PostmanRuntime/7.51.0\"","service":"corecrm-api"}
+{"level":"info","message":"User limtrainier@gmail.com authenticated successfully","service":"corecrm-api"}
+{"level":"info","message":"User signed in successfully: limtrainier@gmail.com","service":"corecrm-api"}
+{"level":"info","message":"::ffff:192.168.65.1 - - [03/Jan/2026:01:21:59 +0000] \"POST /api/auth/sign-in HTTP/1.1\" 200 124 \"-\" \"PostmanRuntime/7.51.0\"","service":"corecrm-api"}
+{"level":"info","message":"::1 - - [03/Jan/2026:01:22:02 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"-\"","service":"corecrm-api"}
+{"level":"info","message":"::ffff:192.168.65.1 - - [03/Jan/2026:01:22:05 +0000] \"POST /api/users/ HTTP/1.1\" 404 150 \"-\" \"PostmanRuntime/7.51.0\"","service":"corecrm-api"}
+{"level":"info","message":"User authenticated: limtrainier@gmail.com (admin)","service":"corecrm-api"}
+{"level":"info","message":"Getting users...","service":"corecrm-api"}
+{"level":"info","message":"::ffff:192.168.65.1 - - [03/Jan/2026:01:22:10 +0000] \"GET /api/users/ HTTP/1.1\" 200 218 \"-\" \"PostmanRuntime/7.51.0\"","service":"corecrm-api"}
+{"level":"info","message":"::1 - - [03/Jan/2026:01:22:32 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"-\"","service":"corecrm-api"}
