@@ -1,101 +1,30 @@
-{"level":"info","message":"Hello from CoreCRM!","service":"coreorm-api"}
-{"level":"info","message":"::1 - - [03/Jan/2026:00:18:15 +0000] \"GET / HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36\"","service":"coreorm-api"}
-{"level":"info","message":"Hello from CoreCRM!","service":"corecrm-api"}
-{"level":"info","message":"::1 - - [03/Jan/2026:00:25:21 +0000] \"GET / HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36\"","service":"corecrm-api"}
-{"level":"info","message":"Hello from CoreCRM!","service":"corecrm-api"}
-{"level":"info","message":"::1 - - [03/Jan/2026:00:25:23 +0000] \"GET / HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36\"","service":"corecrm-api"}
-{"level":"info","message":"Hello from CoreCRM!","service":"corecrm-api"}
-{"level":"info","message":"::1 - - [03/Jan/2026:00:25:23 +0000] \"GET / HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36\"","service":"corecrm-api"}
-{"level":"info","message":"Hello from CoreCRM!","service":"corecrm-api"}
-{"level":"info","message":"::1 - - [03/Jan/2026:00:25:23 +0000] \"GET / HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36\"","service":"corecrm-api"}
-{"level":"info","message":"Hello from CoreCRM!","service":"corecrm-api"}
-{"level":"info","message":"::1 - - [03/Jan/2026:00:25:24 +0000] \"GET / HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36\"","service":"corecrm-api"}
-{"ip":"::1","level":"warn","message":"Rate limit exceeded","path":"/","service":"corecrm-api","userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
-{"level":"info","message":"::1 - - [03/Jan/2026:00:25:24 +0000] \"GET / HTTP/1.1\" 403 51 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36\"","service":"corecrm-api"}
-{"ip":"::1","level":"warn","message":"Rate limit exceeded","path":"/","service":"corecrm-api","userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
-{"level":"info","message":"::1 - - [03/Jan/2026:00:25:28 +0000] \"GET / HTTP/1.1\" 403 51 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36\"","service":"corecrm-api"}
-{"level":"info","message":"::1 - - [03/Jan/2026:00:53:15 +0000] \"GET /health HTTP/1.1\" 200 75 \"-\" \"-\"","service":"corecrm-api"}
-{"level":"info","message":"Hello from CoreCRM!","service":"corecrm-api"}
-{"level":"info","message":"::ffff:192.168.65.1 - - [03/Jan/2026:00:53:28 +0000] \"GET / HTTP/1.1\" 200 19 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36\"","service":"corecrm-api"}
-{"level":"info","message":"::1 - - [03/Jan/2026:00:53:46 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"-\"","service":"corecrm-api"}
-{"level":"info","message":"::1 - - [03/Jan/2026:00:54:16 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"-\"","service":"corecrm-api"}
-{"level":"info","message":"::1 - - [03/Jan/2026:00:54:46 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"-\"","service":"corecrm-api"}
-{"level":"info","message":"::1 - - [03/Jan/2026:00:55:16 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"corecrm-api"}
-{"level":"info","message":"::1 - - [03/Jan/2026:00:55:46 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"corecrm-api"}
-{"level":"info","message":"::1 - - [03/Jan/2026:00:56:17 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"corecrm-api"}
-{"level":"info","message":"::1 - - [03/Jan/2026:00:56:47 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"corecrm-api"}
-{"level":"info","message":"::1 - - [03/Jan/2026:00:57:17 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"corecrm-api"}
-{"level":"info","message":"::1 - - [03/Jan/2026:00:57:47 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"corecrm-api"}
-{"level":"info","message":"::1 - - [03/Jan/2026:00:58:17 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"corecrm-api"}
-{"level":"info","message":"::1 - - [03/Jan/2026:00:58:47 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"corecrm-api"}
-{"level":"info","message":"::1 - - [03/Jan/2026:00:59:18 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"corecrm-api"}
-{"level":"info","message":"::1 - - [03/Jan/2026:00:59:48 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"corecrm-api"}
-{"level":"info","message":"::1 - - [03/Jan/2026:01:00:18 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"corecrm-api"}
-{"level":"info","message":"::1 - - [03/Jan/2026:01:00:48 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"corecrm-api"}
-{"level":"info","message":"::1 - - [03/Jan/2026:01:01:18 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"-\"","service":"corecrm-api"}
-{"level":"info","message":"::1 - - [03/Jan/2026:01:01:48 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"corecrm-api"}
-{"level":"info","message":"::1 - - [03/Jan/2026:01:02:18 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"corecrm-api"}
-{"level":"info","message":"::1 - - [03/Jan/2026:01:02:49 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"corecrm-api"}
-{"level":"info","message":"::1 - - [03/Jan/2026:01:03:19 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"corecrm-api"}
-{"level":"info","message":"::1 - - [03/Jan/2026:01:03:49 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"corecrm-api"}
-{"level":"info","message":"::1 - - [03/Jan/2026:01:04:19 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"corecrm-api"}
-{"level":"info","message":"::1 - - [03/Jan/2026:01:04:49 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"corecrm-api"}
-{"level":"info","message":"::1 - - [03/Jan/2026:01:05:19 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"corecrm-api"}
-{"level":"info","message":"::1 - - [03/Jan/2026:01:05:50 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"corecrm-api"}
-{"level":"info","message":"::1 - - [03/Jan/2026:01:06:20 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"corecrm-api"}
-{"level":"info","message":"::1 - - [03/Jan/2026:01:06:50 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"corecrm-api"}
-{"level":"info","message":"::1 - - [03/Jan/2026:01:07:20 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"corecrm-api"}
-{"level":"info","message":"::1 - - [03/Jan/2026:01:07:50 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"corecrm-api"}
-{"level":"info","message":"::1 - - [03/Jan/2026:01:10:04 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"corecrm-api"}
-{"level":"info","message":"::1 - - [03/Jan/2026:01:10:34 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"corecrm-api"}
-{"level":"info","message":"::1 - - [03/Jan/2026:01:11:04 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"corecrm-api"}
-{"level":"info","message":"::1 - - [03/Jan/2026:01:11:34 +0000] \"GET /health HTTP/1.1\" 200 78 \"-\" \"-\"","service":"corecrm-api"}
-{"level":"info","message":"::1 - - [03/Jan/2026:01:12:05 +0000] \"GET /health HTTP/1.1\" 200 78 \"-\" \"-\"","service":"corecrm-api"}
-{"level":"info","message":"::1 - - [03/Jan/2026:01:21:32 +0000] \"GET /health HTTP/1.1\" 200 75 \"-\" \"-\"","service":"corecrm-api"}
-{"level":"info","message":"::ffff:192.168.65.1 - - [03/Jan/2026:01:21:39 +0000] \"GET /api/users/ HTTP/1.1\" 401 72 \"-\" \"PostmanRuntime/7.51.0\"","service":"corecrm-api"}
+{"level":"info","message":"::1 - - [03/Jan/2026:16:11:23 +0000] \"GET /health HTTP/1.1\" 200 75 \"-\" \"-\"","service":"corecrm-api"}
+{"level":"info","message":"::1 - - [03/Jan/2026:16:11:53 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"-\"","service":"corecrm-api"}
+{"level":"info","message":"::1 - - [03/Jan/2026:16:12:23 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"-\"","service":"corecrm-api"}
+{"level":"info","message":"::1 - - [03/Jan/2026:16:12:54 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"corecrm-api"}
+{"level":"info","message":"::1 - - [03/Jan/2026:16:13:24 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"corecrm-api"}
+{"level":"info","message":"::ffff:192.168.65.1 - - [03/Jan/2026:16:13:52 +0000] \"GET /api/contacts/ HTTP/1.1\" 401 72 \"-\" \"PostmanRuntime/7.51.0\"","service":"corecrm-api"}
+{"level":"info","message":"::1 - - [03/Jan/2026:16:13:54 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"-\"","service":"corecrm-api"}
+{"level":"info","message":"::ffff:192.168.65.1 - - [03/Jan/2026:16:14:15 +0000] \"GET /api/users/sign-in HTTP/1.1\" 401 72 \"-\" \"PostmanRuntime/7.51.0\"","service":"corecrm-api"}
+{"level":"info","message":"::ffff:192.168.65.1 - - [03/Jan/2026:16:14:20 +0000] \"POST /api/users/sign-in HTTP/1.1\" 404 27 \"-\" \"PostmanRuntime/7.51.0\"","service":"corecrm-api"}
+{"level":"info","message":"::1 - - [03/Jan/2026:16:14:24 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"-\"","service":"corecrm-api"}
 {"level":"info","message":"User limtrainier@gmail.com authenticated successfully","service":"corecrm-api"}
 {"level":"info","message":"User signed in successfully: limtrainier@gmail.com","service":"corecrm-api"}
-{"level":"info","message":"::ffff:192.168.65.1 - - [03/Jan/2026:01:21:59 +0000] \"POST /api/auth/sign-in HTTP/1.1\" 200 124 \"-\" \"PostmanRuntime/7.51.0\"","service":"corecrm-api"}
-{"level":"info","message":"::1 - - [03/Jan/2026:01:22:02 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"-\"","service":"corecrm-api"}
-{"level":"info","message":"::ffff:192.168.65.1 - - [03/Jan/2026:01:22:05 +0000] \"POST /api/users/ HTTP/1.1\" 404 150 \"-\" \"PostmanRuntime/7.51.0\"","service":"corecrm-api"}
+{"level":"info","message":"::ffff:192.168.65.1 - - [03/Jan/2026:16:14:35 +0000] \"POST /api/auth/sign-in HTTP/1.1\" 200 124 \"-\" \"PostmanRuntime/7.51.0\"","service":"corecrm-api"}
 {"level":"info","message":"User authenticated: limtrainier@gmail.com (admin)","service":"corecrm-api"}
-{"level":"info","message":"Getting users...","service":"corecrm-api"}
-{"level":"info","message":"::ffff:192.168.65.1 - - [03/Jan/2026:01:22:10 +0000] \"GET /api/users/ HTTP/1.1\" 200 218 \"-\" \"PostmanRuntime/7.51.0\"","service":"corecrm-api"}
-{"level":"info","message":"::1 - - [03/Jan/2026:01:22:32 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"-\"","service":"corecrm-api"}
-{"level":"info","message":"::1 - - [03/Jan/2026:01:23:03 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"-\"","service":"corecrm-api"}
-{"level":"info","message":"::1 - - [03/Jan/2026:01:23:33 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"corecrm-api"}
-{"level":"info","message":"::1 - - [03/Jan/2026:01:24:03 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"corecrm-api"}
-{"level":"info","message":"::1 - - [03/Jan/2026:01:24:33 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"corecrm-api"}
-{"level":"info","message":"::1 - - [03/Jan/2026:01:25:03 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"corecrm-api"}
-{"level":"info","message":"::1 - - [03/Jan/2026:01:25:34 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"corecrm-api"}
-{"level":"info","message":"::1 - - [03/Jan/2026:01:26:04 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"corecrm-api"}
-{"level":"info","message":"::1 - - [03/Jan/2026:01:26:34 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"corecrm-api"}
-{"level":"info","message":"::1 - - [03/Jan/2026:01:27:04 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"corecrm-api"}
-{"level":"info","message":"::1 - - [03/Jan/2026:01:27:35 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"corecrm-api"}
-{"level":"info","message":"::1 - - [03/Jan/2026:01:28:05 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"-\"","service":"corecrm-api"}
-{"level":"info","message":"::1 - - [03/Jan/2026:01:28:35 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"corecrm-api"}
-{"level":"info","message":"::1 - - [03/Jan/2026:01:29:05 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"-\"","service":"corecrm-api"}
-{"level":"info","message":"::1 - - [03/Jan/2026:01:29:35 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"-\"","service":"corecrm-api"}
-{"level":"info","message":"::1 - - [03/Jan/2026:01:30:06 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"-\"","service":"corecrm-api"}
-{"level":"info","message":"::1 - - [03/Jan/2026:01:30:36 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"corecrm-api"}
-{"level":"info","message":"::1 - - [03/Jan/2026:01:31:06 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"corecrm-api"}
-{"level":"info","message":"::1 - - [03/Jan/2026:01:31:36 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"corecrm-api"}
-{"level":"info","message":"::1 - - [03/Jan/2026:01:32:06 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"corecrm-api"}
-{"level":"info","message":"::1 - - [03/Jan/2026:01:32:37 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"-\"","service":"corecrm-api"}
-{"level":"info","message":"::1 - - [03/Jan/2026:01:33:07 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"corecrm-api"}
-{"level":"info","message":"::1 - - [03/Jan/2026:01:33:37 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"corecrm-api"}
-{"level":"info","message":"::1 - - [03/Jan/2026:01:34:07 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"-\"","service":"corecrm-api"}
-{"level":"info","message":"::1 - - [03/Jan/2026:01:34:37 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"corecrm-api"}
-{"level":"info","message":"::1 - - [03/Jan/2026:01:35:08 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"corecrm-api"}
-{"level":"info","message":"::1 - - [03/Jan/2026:01:35:38 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"corecrm-api"}
-{"level":"info","message":"::1 - - [03/Jan/2026:01:36:08 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"-\"","service":"corecrm-api"}
-{"level":"info","message":"::1 - - [03/Jan/2026:01:36:38 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"corecrm-api"}
-{"level":"info","message":"::1 - - [03/Jan/2026:01:37:08 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"corecrm-api"}
-{"level":"info","message":"::1 - - [03/Jan/2026:01:37:39 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"corecrm-api"}
-{"level":"info","message":"::1 - - [03/Jan/2026:01:38:09 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"corecrm-api"}
-{"level":"info","message":"::1 - - [03/Jan/2026:01:38:39 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"corecrm-api"}
-{"level":"info","message":"::1 - - [03/Jan/2026:01:39:09 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"corecrm-api"}
-{"level":"info","message":"::1 - - [03/Jan/2026:01:39:39 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"corecrm-api"}
-{"level":"info","message":"::1 - - [03/Jan/2026:01:40:09 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"corecrm-api"}
-{"level":"info","message":"::1 - - [03/Jan/2026:01:40:40 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"corecrm-api"}
-{"level":"info","message":"::1 - - [03/Jan/2026:01:41:10 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"corecrm-api"}
+{"level":"info","message":"::ffff:192.168.65.1 - - [03/Jan/2026:16:14:49 +0000] \"POST /api/contacts/ HTTP/1.1\" 201 254 \"-\" \"PostmanRuntime/7.51.0\"","service":"corecrm-api"}
+{"level":"info","message":"::1 - - [03/Jan/2026:16:14:54 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"corecrm-api"}
+{"level":"info","message":"::1 - - [03/Jan/2026:16:15:25 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"corecrm-api"}
+{"level":"info","message":"User authenticated: limtrainier@gmail.com (admin)","service":"corecrm-api"}
+{"level":"info","message":"::ffff:192.168.65.1 - - [03/Jan/2026:16:15:52 +0000] \"GET /api/deals/ HTTP/1.1\" 200 63 \"-\" \"PostmanRuntime/7.51.0\"","service":"corecrm-api"}
+{"level":"info","message":"::1 - - [03/Jan/2026:16:15:55 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"corecrm-api"}
+{"level":"info","message":"User authenticated: limtrainier@gmail.com (admin)","service":"corecrm-api"}
+{"level":"info","message":"::ffff:192.168.65.1 - - [03/Jan/2026:16:16:01 +0000] \"GET /api/contacts/ HTTP/1.1\" 200 270 \"-\" \"PostmanRuntime/7.51.0\"","service":"corecrm-api"}
+{"level":"info","message":"User authenticated: limtrainier@gmail.com (admin)","service":"corecrm-api"}
+{"level":"info","message":"::ffff:192.168.65.1 - - [03/Jan/2026:16:16:12 +0000] \"GET /api/contacts/ HTTP/1.1\" 200 270 \"-\" \"PostmanRuntime/7.51.0\"","service":"corecrm-api"}
+{"level":"info","message":"User authenticated: limtrainier@gmail.com (admin)","service":"corecrm-api"}
+{"level":"info","message":"::ffff:192.168.65.1 - - [03/Jan/2026:16:16:20 +0000] \"POST /api/deals/ HTTP/1.1\" 201 219 \"-\" \"PostmanRuntime/7.51.0\"","service":"corecrm-api"}
+{"level":"info","message":"::1 - - [03/Jan/2026:16:16:25 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"corecrm-api"}
+{"level":"info","message":"::1 - - [03/Jan/2026:16:16:55 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"corecrm-api"}
+{"level":"info","message":"::1 - - [03/Jan/2026:16:17:25 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"-\"","service":"corecrm-api"}
+{"level":"info","message":"::1 - - [03/Jan/2026:16:17:55 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"-\"","service":"corecrm-api"}
