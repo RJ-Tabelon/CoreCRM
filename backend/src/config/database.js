@@ -1,7 +1,15 @@
 import 'dotenv/config';
 
-import { neon } from '@neondatabase/serverless';
+import { neon, neonConfig } from '@neondatabase/serverless';
 import { drizzle } from 'drizzle-orm/neon-http';
+
+// When running against Neon Local, direct the serverless driver to the local proxy
+if (process.env.NEON_LOCAL === 'true') {
+  neonConfig.fetchEndpoint =
+    process.env.NEON_FETCH_ENDPOINT || 'http://neon-local:5432/sql';
+  neonConfig.useSecureWebSocket = false;
+  neonConfig.poolQueryViaFetch = true;
+}
 
 // Creates a lightweight, serverless PostgreSQL client
 const sql = neon(process.env.DATABASE_URL);

@@ -1,0 +1,36 @@
+version: '3.9'
+
+services:
+  neon-local:
+    image: neondatabase/neon_local:latest
+    ports:
+      - '5432:5432'
+    env_file:
+      - .env.development
+    volumes:
+      - ./.neon_local/:/tmp/.neon_local
+      - ../.git/HEAD:/tmp/.git/HEAD:ro,consistent
+
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        NODE_ENV: development
+    env_file:
+      - .env.development
+    ports:
+      - '3000:3000'
+    depends_on:
+      - neon-local
+    command: npm run dev
+    volumes:
+      - ./src:/app/src
+      - ./logs:/app/logs
+      - ./drizzle:/app/drizzle
+      - ./drizzle.config.js:/app/drizzle.config.js
+    restart: unless-stopped
+
+networks:
+  default:
+    name: corecrm_dev

@@ -1,0 +1,19 @@
+version: '3.9'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        NODE_ENV: production
+    env_file:
+      - .env.production
+    ports:
+      - '3000:3000'
+    command: npm start
+    restart: unless-stopped
+
+networks:
+  default:
+    name: corecrm_prod
