@@ -1,0 +1,223 @@
+@import 'tailwindcss';
+
+:root {
+  --crm-primary: #3988a2;
+  --crm-darkprimary: #2c6a7e;
+  --crm-secondary: #be7c58;
+  --crm-accent: #cd7bd0;
+  --crm-danger: #ca4e4e;
+}
+
+@layer base {
+  html,
+  body {
+    height: 100%;
+  }
+
+  body {
+    /* Blue-tinted page background (kept on the page shell, not the cards). */
+    @apply min-h-screen text-slate-600 antialiased;
+    @apply bg-fixed;
+    background-color: #3988a2;
+    background-image: url('./assets/texture/fabric.png');
+  }
+
+  a {
+    @apply text-inherit;
+  }
+}
+
+@layer components {
+  /* Page background helpers */
+  .app-bg {
+    @apply bg-fixed;
+
+    background-color: #3988a2;
+    background-image: url('./assets/texture/fabric.png');
+  }
+
+  /* Glass surfaces (white + blur) */
+  .glass-card {
+    @apply rounded-2xl bg-white/75 backdrop-blur-md;
+    @apply border border-black ring-1 ring-sky-900/5 shadow-sm;
+  }
+
+  .glass-panel {
+    @apply rounded-2xl bg-white/55 backdrop-blur-md;
+    @apply border border-black ring-1 ring-sky-900/5 shadow-sm;
+  }
+
+  .secondary-panel {
+    @apply rounded-2xl backdrop-blur-md;
+    @apply border border-black shadow-sm;
+    @apply p-4 md:p-5;
+    background-color: var(--crm-secondary);
+    background-image: url('./assets/texture/fabric.png');
+  }
+
+  .secondary-card {
+    @apply rounded-2xl backdrop-blur-md;
+    @apply border border-black shadow-sm;
+    background-color: var(--crm-secondary);
+    background-image: url('./assets/texture/fabric.png');
+  }
+
+  .glass-item {
+    @apply rounded-xl bg-white/60 backdrop-blur-sm;
+    @apply border border-black ring-1 ring-sky-900/5;
+  }
+
+  .glass-interactive {
+    @apply transition  hover:shadow-md;
+  }
+
+  .divider {
+    @apply h-px bg-white/50;
+  }
+
+  .glass-divider {
+    @apply border-b border-black;
+  }
+
+  .layout-shell {
+    @apply min-h-screen grid grid-cols-1 md:grid-cols-[250px_1fr];
+  }
+
+  .sidebar {
+    /* Sidebar blends into blue background as a glass panel */
+    @apply p-4 md:p-5;
+    @apply rounded-3xl m-5 bg-white/85 backdrop-blur-md;
+    @apply shadow-sm border border-black;
+  }
+
+  .sidebar-link {
+    @apply w-full flex items-center  gap-2 rounded-xl px-3 py-2 text-sm font-medium text-slate-700;
+    @apply transition hover:bg-[#3988a2]/25 hover:text-slate-900;
+  }
+
+  .sidebar-link-active {
+    @apply bg-[#3988a2]/40;
+    @apply text-slate-900;
+  }
+
+  .topbar {
+    /* Topbar blends into blue background as a glass panel */
+    @apply px-4 md:px-6 py-4 flex items-center justify-between gap-3;
+    @apply rounded-2xl bg-white/55 backdrop-blur-md;
+    @apply border border-white/45 ring-1 ring-sky-900/5 shadow-sm;
+  }
+
+  .page {
+    @apply py-4 pr-4 pl-0 md:py-6 md:pr-6 md:pl-0;
+  }
+
+  .page-header {
+    @apply bg-white/85 rounded-3xl border border-black;
+  }
+
+  .page-title {
+    @apply text-xl md:text-2xl font-semibold tracking-tight;
+  }
+
+  .page-subtitle {
+    @apply text-sm text-slate-600;
+  }
+
+  .card {
+    /* Backwards-compatible: existing UI uses `.card` everywhere. */
+    @apply rounded-2xl bg-white/55 backdrop-blur-md;
+    @apply ring-sky-900/5 shadow-sm border border-black;
+  }
+
+  .card-body {
+    @apply p-4 md:p-5;
+  }
+
+  .btn-primary {
+    background-color: var(--crm-primary);
+    @apply inline-flex items-center justify-center gap-2 rounded-xl px-4 py-2 text-sm font-semibold border border-black;
+    @apply transition disabled:opacity-60 disabled:cursor-not-allowed text-white hover:opacity-95 shadow-sm;
+  }
+
+  .btn-secondary {
+    background-color: var(--crm-secondary);
+    @apply inline-flex items-center justify-center gap-2 rounded-xl px-4 py-2 text-sm font-semibold border border-black;
+    @apply transition disabled:opacity-60 disabled:cursor-not-allowed text-white hover:opacity-95 shadow-sm;
+  }
+
+  .btn-danger {
+    background-color: var(--crm-danger);
+    @apply inline-flex items-center justify-center gap-2 rounded-xl px-4 py-2 text-sm font-semibold border border-black;
+    @apply transition disabled:opacity-60 disabled:cursor-not-allowed text-white hover:opacity-95 shadow-sm;
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl px-4 py-2 text-sm font-semibold;
+    @apply border border-black bg-slate-100 backdrop-blur-sm;
+    @apply transition disabled:opacity-60 disabled:cursor-not-allowed text-slate-800 hover:bg-white/55;
+  }
+
+  .select {
+    @apply w-full appearance-none rounded-xl border border-black bg-white/70 backdrop-blur-sm pl-3 pr-10 py-2 text-sm;
+    @apply outline-none focus:ring-2 focus:ring-[#3988a2]/80;
+  }
+
+  .input {
+    @apply w-full rounded-xl border border-black bg-white/70 backdrop-blur-sm px-3 py-2 text-sm;
+    @apply outline-none focus:ring-2 focus:ring-[#3988a2]/80;
+  }
+
+  .textarea {
+    @apply w-full rounded-xl border border-black bg-white/70 backdrop-blur-sm px-3 py-2 text-sm;
+    @apply outline-none focus:ring-2 focus:ring-[#3988a2]/80 min-h-[96px];
+  }
+
+  .badge-stage-new {
+    @apply inline-flex items-center rounded-full px-2.5 py-1 text-xs font-semibold text-purple-900;
+    background-color: #bf79bd;
+    background-image: url('./assets/texture/fabric.png');
+  }
+
+  .badge-stage-in-progress {
+    @apply inline-flex items-center rounded-full px-2.5 py-1 text-xs font-semibold text-yellow-900;
+    background-color: #bfb379;
+    background-image: url('./assets/texture/fabric.png');
+  }
+
+  .badge-stage-won {
+    @apply inline-flex items-center rounded-full px-2.5 py-1 text-xs font-semibold text-emerald-800;
+    background-color: #79bf90;
+    background-image: url('./assets/texture/fabric.png');
+  }
+
+  .badge-stage-lost {
+    @apply inline-flex items-center rounded-full px-2.5 py-1 text-xs font-semibold text-rose-800;
+    background-color: #bf7979;
+    background-image: url('./assets/texture/fabric.png');
+  }
+
+  .toast {
+    @apply pointer-events-auto w-[320px] max-w-[calc(100vw-2rem)];
+    @apply rounded-2xl bg-white/75 backdrop-blur-md;
+    @apply border border-black ring-1 ring-sky-900/5 shadow-lg;
+  }
+
+  /* Modal helpers */
+  .modal-backdrop {
+    /* Blue-tinted dimmer (avoid pure black backgrounds). */
+    @apply bg-sky-950/20;
+  }
+
+  .modal-header {
+    @apply border-b border-black px-4 md:px-5 py-3 flex items-center justify-between;
+  }
+
+  .icon-btn {
+    @apply text-slate-600 hover:text-slate-900 transition;
+  }
+
+  /* Tables */
+  .table-row {
+    @apply border-t border-black;
+  }
+}

@@ -13,13 +13,13 @@ const securityMiddleware = async (req, res, next) => {
     // Decide how many requests are allowed based on role
     switch (role) {
       case 'admin':
-        limit = 20;
+        limit = 100;
         break;
       case 'user':
-        limit = 10;
+        limit = 90;
         break;
       case 'guest':
-        limit = 5;
+        limit = 50;
         break;
     }
 
@@ -66,17 +66,17 @@ const securityMiddleware = async (req, res, next) => {
     }
 
     // Block requests that exceed the rate limit
-    if (decision.isDenied() && decision.reason.isRateLimit()) {
-      logger.warn('Rate limit exceeded', {
-        ip: req.ip,
-        userAgent: req.get('User-Agent'),
-        path: req.path,
-      });
+    // if (decision.isDenied() && decision.reason.isRateLimit()) {
+    //   logger.warn('Rate limit exceeded', {
+    //     ip: req.ip,
+    //     userAgent: req.get('User-Agent'),
+    //     path: req.path,
+    //   });
 
-      return res
-        .status(403)
-        .json({ error: 'Forbidden', message: 'Too many requests' });
-    }
+    //   return res
+    //     .status(403)
+    //     .json({ error: 'Forbidden', message: 'Too many requests' });
+    // }
 
     // If everything is okay, allow the request to continue
     next();
