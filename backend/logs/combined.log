@@ -1,0 +1,81 @@
+{"level":"info","message":"User limtrainier@gmail.com authenticated successfully","service":"corecrm-api"}
+{"level":"info","message":"User signed in successfully: limtrainier@gmail.com","service":"corecrm-api"}
+{"level":"info","message":"::1 - - [04/Jan/2026:18:06:52 +0000] \"POST /api/auth/sign-in HTTP/1.1\" 200 124 \"http://localhost:5173/login\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36\"","service":"corecrm-api"}
+{"level":"info","message":"User authenticated: limtrainier@gmail.com (admin)","service":"corecrm-api"}
+{"level":"info","message":"User authenticated: limtrainier@gmail.com (admin)","service":"corecrm-api"}
+{"level":"info","message":"User authenticated: limtrainier@gmail.com (admin)","service":"corecrm-api"}
+{"level":"info","message":"::1 - - [04/Jan/2026:18:06:52 +0000] \"GET /api/deals HTTP/1.1\" 304 - \"http://localhost:5173/dashboard\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36\"","service":"corecrm-api"}
+{"level":"info","message":"User authenticated: limtrainier@gmail.com (admin)","service":"corecrm-api"}
+{"level":"info","message":"::1 - - [04/Jan/2026:18:06:52 +0000] \"GET /api/contacts HTTP/1.1\" 304 - \"http://localhost:5173/dashboard\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36\"","service":"corecrm-api"}
+{"level":"info","message":"::1 - - [04/Jan/2026:18:06:52 +0000] \"GET /api/deals HTTP/1.1\" 304 - \"http://localhost:5173/dashboard\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36\"","service":"corecrm-api"}
+{"level":"info","message":"::1 - - [04/Jan/2026:18:06:52 +0000] \"GET /api/tasks/mine HTTP/1.1\" 304 - \"http://localhost:5173/dashboard\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36\"","service":"corecrm-api"}
+{"level":"info","message":"User authenticated: limtrainier@gmail.com (admin)","service":"corecrm-api"}
+{"level":"info","message":"User authenticated: limtrainier@gmail.com (admin)","service":"corecrm-api"}
+{"level":"info","message":"::1 - - [04/Jan/2026:18:06:52 +0000] \"GET /api/contacts HTTP/1.1\" 304 - \"http://localhost:5173/dashboard\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36\"","service":"corecrm-api"}
+{"level":"info","message":"::1 - - [04/Jan/2026:18:06:52 +0000] \"GET /api/tasks/mine HTTP/1.1\" 304 - \"http://localhost:5173/dashboard\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36\"","service":"corecrm-api"}
+{"level":"info","message":"User authenticated: limtrainier@gmail.com (admin)","service":"corecrm-api"}
+{"level":"info","message":"::1 - - [04/Jan/2026:18:07:04 +0000] \"GET /api/contacts HTTP/1.1\" 304 - \"http://localhost:5173/contacts\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36\"","service":"corecrm-api"}
+{"level":"info","message":"User authenticated: limtrainier@gmail.com (admin)","service":"corecrm-api"}
+{"level":"info","message":"::1 - - [04/Jan/2026:18:07:04 +0000] \"GET /api/contacts HTTP/1.1\" 304 - \"http://localhost:5173/contacts\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36\"","service":"corecrm-api"}
+{"level":"info","message":"User authenticated: limtrainier@gmail.com (admin)","service":"corecrm-api"}
+{"level":"info","message":"User authenticated: limtrainier@gmail.com (admin)","service":"corecrm-api"}
+{"level":"info","message":"::1 - - [04/Jan/2026:18:07:07 +0000] \"GET /api/deals HTTP/1.1\" 304 - \"http://localhost:5173/deals\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36\"","service":"corecrm-api"}
+{"level":"info","message":"User authenticated: limtrainier@gmail.com (admin)","service":"corecrm-api"}
+{"level":"info","message":"::1 - - [04/Jan/2026:18:07:07 +0000] \"GET /api/contacts HTTP/1.1\" 304 - \"http://localhost:5173/deals\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36\"","service":"corecrm-api"}
+{"level":"info","message":"::1 - - [04/Jan/2026:18:07:07 +0000] \"GET /api/deals HTTP/1.1\" 304 - \"http://localhost:5173/deals\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36\"","service":"corecrm-api"}
+{"level":"info","message":"User authenticated: limtrainier@gmail.com (admin)","service":"corecrm-api"}
+{"level":"info","message":"::1 - - [04/Jan/2026:18:07:07 +0000] \"GET /api/contacts HTTP/1.1\" 304 - \"http://localhost:5173/deals\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36\"","service":"corecrm-api"}
+{"level":"info","message":"User authenticated: limtrainier@gmail.com (admin)","service":"corecrm-api"}
+{"level":"info","message":"::1 - - [04/Jan/2026:18:07:07 +0000] \"GET /api/contacts HTTP/1.1\" 304 - \"http://localhost:5173/contacts\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36\"","service":"corecrm-api"}
+{"level":"info","message":"User authenticated: limtrainier@gmail.com (admin)","service":"corecrm-api"}
+{"level":"info","message":"::1 - - [04/Jan/2026:18:07:07 +0000] \"GET /api/contacts HTTP/1.1\" 304 - \"http://localhost:5173/contacts\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36\"","service":"corecrm-api"}
+{"level":"info","message":"User authenticated: limtrainier@gmail.com (admin)","service":"corecrm-api"}
+{"level":"info","message":"User authenticated: limtrainier@gmail.com (admin)","service":"corecrm-api"}
+{"level":"info","message":"User authenticated: limtrainier@gmail.com (admin)","service":"corecrm-api"}
+{"level":"info","message":"::1 - - [04/Jan/2026:18:07:08 +0000] \"GET /api/deals HTTP/1.1\" 304 - \"http://localhost:5173/dashboard\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36\"","service":"corecrm-api"}
+{"level":"info","message":"::1 - - [04/Jan/2026:18:07:08 +0000] \"GET /api/contacts HTTP/1.1\" 304 - \"http://localhost:5173/dashboard\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36\"","service":"corecrm-api"}
+{"level":"info","message":"User authenticated: limtrainier@gmail.com (admin)","service":"corecrm-api"}
+{"level":"info","message":"User authenticated: limtrainier@gmail.com (admin)","service":"corecrm-api"}
+{"level":"info","message":"::1 - - [04/Jan/2026:18:07:08 +0000] \"GET /api/deals HTTP/1.1\" 304 - \"http://localhost:5173/dashboard\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36\"","service":"corecrm-api"}
+{"level":"info","message":"::1 - - [04/Jan/2026:18:07:08 +0000] \"GET /api/contacts HTTP/1.1\" 304 - \"http://localhost:5173/dashboard\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36\"","service":"corecrm-api"}
+{"level":"info","message":"::1 - - [04/Jan/2026:18:07:08 +0000] \"GET /api/tasks/mine HTTP/1.1\" 304 - \"http://localhost:5173/dashboard\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36\"","service":"corecrm-api"}
+{"level":"info","message":"User authenticated: limtrainier@gmail.com (admin)","service":"corecrm-api"}
+{"level":"info","message":"::1 - - [04/Jan/2026:18:07:08 +0000] \"GET /api/tasks/mine HTTP/1.1\" 304 - \"http://localhost:5173/dashboard\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36\"","service":"corecrm-api"}
+{"level":"info","message":"User authenticated: limtrainier@gmail.com (admin)","service":"corecrm-api"}
+{"level":"info","message":"::1 - - [04/Jan/2026:18:07:27 +0000] \"GET /api/contacts HTTP/1.1\" 304 - \"http://localhost:5173/contacts\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36\"","service":"corecrm-api"}
+{"level":"info","message":"User authenticated: limtrainier@gmail.com (admin)","service":"corecrm-api"}
+{"level":"info","message":"::1 - - [04/Jan/2026:18:07:27 +0000] \"GET /api/contacts HTTP/1.1\" 304 - \"http://localhost:5173/contacts\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36\"","service":"corecrm-api"}
+{"level":"info","message":"User authenticated: limtrainier@gmail.com (admin)","service":"corecrm-api"}
+{"level":"info","message":"User authenticated: limtrainier@gmail.com (admin)","service":"corecrm-api"}
+{"level":"info","message":"::1 - - [04/Jan/2026:18:07:39 +0000] \"GET /api/deals HTTP/1.1\" 304 - \"http://localhost:5173/deals\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36\"","service":"corecrm-api"}
+{"level":"info","message":"::1 - - [04/Jan/2026:18:07:39 +0000] \"GET /api/contacts HTTP/1.1\" 304 - \"http://localhost:5173/deals\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36\"","service":"corecrm-api"}
+{"level":"info","message":"User authenticated: limtrainier@gmail.com (admin)","service":"corecrm-api"}
+{"level":"info","message":"User authenticated: limtrainier@gmail.com (admin)","service":"corecrm-api"}
+{"level":"info","message":"::1 - - [04/Jan/2026:18:07:39 +0000] \"GET /api/contacts HTTP/1.1\" 304 - \"http://localhost:5173/deals\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36\"","service":"corecrm-api"}
+{"level":"info","message":"::1 - - [04/Jan/2026:18:07:39 +0000] \"GET /api/deals HTTP/1.1\" 304 - \"http://localhost:5173/deals\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36\"","service":"corecrm-api"}
+{"level":"info","message":"User authenticated: limtrainier@gmail.com (admin)","service":"corecrm-api"}
+{"level":"info","message":"User authenticated: limtrainier@gmail.com (admin)","service":"corecrm-api"}
+{"level":"info","message":"::1 - - [04/Jan/2026:18:07:48 +0000] \"GET /api/deals HTTP/1.1\" 304 - \"http://localhost:5173/tasks\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36\"","service":"corecrm-api"}
+{"level":"info","message":"::1 - - [04/Jan/2026:18:07:48 +0000] \"GET /api/contacts HTTP/1.1\" 304 - \"http://localhost:5173/tasks\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36\"","service":"corecrm-api"}
+{"level":"info","message":"User authenticated: limtrainier@gmail.com (admin)","service":"corecrm-api"}
+{"level":"info","message":"User authenticated: limtrainier@gmail.com (admin)","service":"corecrm-api"}
+{"level":"info","message":"User authenticated: limtrainier@gmail.com (admin)","service":"corecrm-api"}
+{"level":"info","message":"::1 - - [04/Jan/2026:18:07:48 +0000] \"GET /api/deals HTTP/1.1\" 304 - \"http://localhost:5173/tasks\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36\"","service":"corecrm-api"}
+{"level":"info","message":"::1 - - [04/Jan/2026:18:07:48 +0000] \"GET /api/contacts HTTP/1.1\" 304 - \"http://localhost:5173/tasks\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36\"","service":"corecrm-api"}
+{"level":"info","message":"::1 - - [04/Jan/2026:18:07:48 +0000] \"GET /api/tasks/mine HTTP/1.1\" 304 - \"http://localhost:5173/tasks\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36\"","service":"corecrm-api"}
+{"level":"info","message":"User authenticated: limtrainier@gmail.com (admin)","service":"corecrm-api"}
+{"level":"info","message":"::1 - - [04/Jan/2026:18:07:48 +0000] \"GET /api/tasks/mine HTTP/1.1\" 304 - \"http://localhost:5173/tasks\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36\"","service":"corecrm-api"}
+{"level":"info","message":"User authenticated: limtrainier@gmail.com (admin)","service":"corecrm-api"}
+{"level":"info","message":"::1 - - [04/Jan/2026:18:07:53 +0000] \"PUT /api/tasks/3 HTTP/1.1\" 200 197 \"http://localhost:5173/tasks\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36\"","service":"corecrm-api"}
+{"level":"info","message":"User authenticated: limtrainier@gmail.com (admin)","service":"corecrm-api"}
+{"level":"info","message":"User authenticated: limtrainier@gmail.com (admin)","service":"corecrm-api"}
+{"level":"info","message":"::1 - - [04/Jan/2026:18:07:53 +0000] \"GET /api/deals HTTP/1.1\" 304 - \"http://localhost:5173/tasks\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36\"","service":"corecrm-api"}
+{"level":"info","message":"::1 - - [04/Jan/2026:18:07:53 +0000] \"GET /api/contacts HTTP/1.1\" 304 - \"http://localhost:5173/tasks\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36\"","service":"corecrm-api"}
+{"level":"info","message":"User authenticated: limtrainier@gmail.com (admin)","service":"corecrm-api"}
+{"level":"info","message":"::1 - - [04/Jan/2026:18:07:53 +0000] \"GET /api/tasks/mine HTTP/1.1\" 200 526 \"http://localhost:5173/tasks\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36\"","service":"corecrm-api"}
+{"level":"info","message":"User authenticated: limtrainier@gmail.com (admin)","service":"corecrm-api"}
+{"level":"info","message":"User authenticated: limtrainier@gmail.com (admin)","service":"corecrm-api"}
+{"level":"info","message":"::1 - - [04/Jan/2026:18:07:57 +0000] \"GET /api/deals HTTP/1.1\" 304 - \"http://localhost:5173/tasks\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36\"","service":"corecrm-api"}
+{"level":"info","message":"::1 - - [04/Jan/2026:18:07:57 +0000] \"GET /api/contacts HTTP/1.1\" 304 - \"http://localhost:5173/tasks\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36\"","service":"corecrm-api"}
+{"level":"info","message":"User authenticated: limtrainier@gmail.com (admin)","service":"corecrm-api"}
+{"level":"info","message":"::1 - - [04/Jan/2026:18:07:57 +0000] \"GET /api/tasks HTTP/1.1\" 200 672 \"http://localhost:5173/tasks\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36\"","service":"corecrm-api"}
