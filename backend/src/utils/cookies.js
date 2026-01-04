@@ -4,7 +4,13 @@ export const cookies = {
     // These options are reused whenever a cookie is set or cleared
 
     httpOnly: true, // Cookie cannot be accessed by JavaScript (protects against XSS)
-    secure: process.env.NODE_ENV === 'production', // HTTPS only in production
+    // Defaults to HTTPS-only cookies in production.
+    // Override (e.g. on a single EC2 instance running plain HTTP) with:
+    // COOKIE_SECURE=false
+    secure:
+      typeof process.env.COOKIE_SECURE === 'string'
+        ? process.env.COOKIE_SECURE.toLowerCase() === 'true'
+        : process.env.NODE_ENV === 'production',
     sameSite: 'strict', // Prevents cookie from being sent on cross-site requests
     maxAge: 15 * 60 * 1000, // Cookie expires after 15 minutes
   }),
