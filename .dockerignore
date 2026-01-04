@@ -1,0 +1,9 @@
+.git
+.github
+**/node_modules
+**/dist
+**/.env
+**/.env.*
+**/.neon_local
+backend/logs
+backend/coverage

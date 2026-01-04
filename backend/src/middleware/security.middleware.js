@@ -5,6 +5,10 @@ import { slidingWindow } from '@arcjet/node';
 // Security middleware that applies role-based rate limiting and threat protection
 const securityMiddleware = async (req, res, next) => {
   try {
+    // Health checks should not be subject to rate-limiting/fingerprinting.
+    // Docker (and other orchestrators) may call this endpoint without typical client metadata.
+    if (req.path === '/health') return next();
+
     // Get the user's role (fallback to "guest" if not authenticated)
     const role = req.user?.role || 'guest';
 

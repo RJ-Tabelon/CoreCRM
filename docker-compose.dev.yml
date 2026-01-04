@@ -1,0 +1,86 @@
+services:
+  neon-local:
+    image: neondatabase/neon_local:latest
+    ports:
+      - '5432:5432'
+    environment:
+      # Required for Neon Local (proxy to Neon Cloud)
+      NEON_API_KEY: ${NEON_API_KEY}
+      NEON_PROJECT_ID: ${NEON_PROJECT_ID}
+      # Optional: pin to a branch or create ephemeral branches from a parent.
+      # BRANCH_ID: ${NEON_BRANCH_ID}
+      # PARENT_BRANCH_ID: ${NEON_PARENT_BRANCH_ID}
+      # Use Neon serverless driver so the backend can set fetchEndpoint.
+      DRIVER: serverless
+    volumes:
+      - ./.neon_local/:/tmp/.neon_local
+      - ./.git/HEAD:/tmp/.git/HEAD:ro,consistent
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+      target: development
+    environment:
+      NODE_ENV: development
+      ARCJET_ENV: development
+      PORT: 3000
+      # Backend connects to Neon Local over the compose network.
+      # Neon Local's default postgres creds are neon/npg.
+      DATABASE_URL: ${DATABASE_URL:-postgres://neon:npg@neon-local:5432/corecrm?sslmode=no-verify}
+      NEON_LOCAL: 'true'
+      NEON_FETCH_ENDPOINT: ${NEON_FETCH_ENDPOINT:-http://neon-local:5432/sql}
+
+      JWT_SECRET: ${JWT_SECRET:-dev-only-change-me}
+      LOG_LEVEL: ${LOG_LEVEL:-info}
+      ARCJET_KEY: ${ARCJET_KEY:-}
+
+      # Dev CORS (only used if you call the backend directly from the browser)
+      CORS_ORIGIN: ${CORS_ORIGIN:-http://localhost:5173}
+    ports:
+      - '3000:3000'
+    depends_on:
+      - neon-local
+    user: root
+    command:
+      - sh
+      - -lc
+      - |
+        if [ ! -d node_modules ] || [ -z "$(ls -A node_modules 2>/dev/null)" ]; then
+          npm ci
+        fi
+        npm run dev
+    volumes:
+      - ./backend:/app
+      - backend_node_modules:/app/node_modules
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile.dev
+    environment:
+      # Browser calls backend directly in dev (per requirement)
+      VITE_API_URL: ${VITE_API_URL:-http://localhost:3000}
+      # Improve file watching on Docker Desktop (macOS)
+      CHOKIDAR_USEPOLLING: ${CHOKIDAR_USEPOLLING:-true}
+    ports:
+      - '5173:5173'
+    depends_on:
+      - backend
+    command:
+      - sh
+      - -lc
+      - |
+        if [ ! -d node_modules ] || [ -z "$(ls -A node_modules 2>/dev/null)" ]; then
+          npm ci
+        fi
+        npm run dev -- --host 0.0.0.0 --port 5173
+    volumes:
+      - ./frontend:/app
+      - frontend_node_modules:/app/node_modules
+    restart: unless-stopped
+
+volumes:
+  backend_node_modules:
+  frontend_node_modules:

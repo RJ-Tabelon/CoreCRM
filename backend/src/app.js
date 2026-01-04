@@ -14,8 +14,29 @@ import securityMiddleware from '#middleware/security.middleware.js';
 
 const app = express();
 
+// When running behind a reverse proxy (e.g. Nginx in prod), trust proxy headers
+// so req.ip and related values resolve correctly (required by Arcjet fingerprinting).
+if (process.env.NODE_ENV === 'production') {
+  app.set('trust proxy', 1);
+}
+
 app.use(helmet());
-app.use(cors());
+
+// CORS is only needed in dev when the browser calls the API directly.
+// In prod, requests should come via Nginx on the same origin.
+if (process.env.NODE_ENV !== 'production') {
+  const allowedOrigins = (process.env.CORS_ORIGIN || 'http://localhost:5173')
+    .split(',')
+    .map(s => s.trim())
+    .filter(Boolean);
+
+  app.use(
+    cors({
+      origin: allowedOrigins,
+      credentials: true,
+    })
+  );
+}
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
