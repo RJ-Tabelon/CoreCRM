@@ -68,7 +68,7 @@
   }
 
   .glass-interactive {
-    @apply transition  hover:shadow-md;
+    @apply transition;
   }
 
   .divider {
