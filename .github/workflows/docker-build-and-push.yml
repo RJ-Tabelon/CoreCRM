@@ -44,16 +44,26 @@ jobs:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
 
-      - name: Extract metadata
-        id: meta
+      - name: Extract metadata (branch)
+        id: meta_branch
+        if: github.ref_type == 'branch'
         uses: docker/metadata-action@v5
         with:
           images: ${{ secrets.DOCKER_USERNAME }}/${{ matrix.image }}
           tags: |
-            type=raw,value=latest,enable={{is_default_branch}}
+            type=sha,format=short
+            type=raw,value=latest
+
+      - name: Extract metadata (tag)
+        id: meta_tag
+        if: github.ref_type == 'tag'
+        uses: docker/metadata-action@v5
+        with:
+          images: ${{ secrets.DOCKER_USERNAME }}/${{ matrix.image }}
+          tags: |
             type=sha,format=short
             type=ref,event=tag
-            type=semver,pattern={{version}},enable={{is_tag}}
+            type=semver,pattern={{version}}
 
       - name: Build and push Docker image (${{ matrix.service }})
         uses: docker/build-push-action@v5
@@ -61,8 +71,8 @@ jobs:
           context: ${{ matrix.context }}
           file: ${{ matrix.dockerfile }}
           push: true
-          tags: ${{ steps.meta.outputs.tags }}
-          labels: ${{ steps.meta.outputs.labels }}
+          tags: ${{ steps.meta_branch.outputs.tags != '' && steps.meta_branch.outputs.tags || steps.meta_tag.outputs.tags }}
+          labels: ${{ steps.meta_branch.outputs.labels != '' && steps.meta_branch.outputs.labels || steps.meta_tag.outputs.labels }}
           platforms: linux/amd64,linux/arm64
           cache-from: type=gha
           cache-to: type=gha,mode=max
@@ -75,7 +85,7 @@ jobs:
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "**Tags:**" >> $GITHUB_STEP_SUMMARY
           echo "\`\`\`" >> $GITHUB_STEP_SUMMARY
-          echo "${{ steps.meta.outputs.tags }}" >> $GITHUB_STEP_SUMMARY
+          echo "${{ steps.meta_branch.outputs.tags != '' && steps.meta_branch.outputs.tags || steps.meta_tag.outputs.tags }}" >> $GITHUB_STEP_SUMMARY
           echo "\`\`\`" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "**Platforms:** linux/amd64, linux/arm64" >> $GITHUB_STEP_SUMMARY
