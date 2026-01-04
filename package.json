@@ -1,0 +1,11 @@
+{
+  "name": "corecrm",
+  "private": true,
+  "scripts": {
+    "dev:docker": "bash scripts/dev-docker.sh",
+    "prod:docker": "bash scripts/prod-docker.sh",
+    "dev:docker:down": "bash scripts/dev-down.sh",
+    "prod:docker:down": "bash scripts/prod-down.sh",
+    "docker:clean": "bash scripts/docker-clean.sh"
+  }
+}
