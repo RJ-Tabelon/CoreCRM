@@ -37,7 +37,10 @@ if (logToFile) {
     // If the filesystem isn't writable/mounted, stay on console logging.
     // Winston File transport can throw during construction in some environments.
     // eslint-disable-next-line no-console
-    console.warn('LOG_TO_FILE=true but file transport failed; using console only', e);
+    console.warn(
+      'LOG_TO_FILE=true but file transport failed; using console only',
+      e
+    );
   }
 }
 
