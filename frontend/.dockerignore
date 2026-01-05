@@ -1,0 +1,27 @@
+.git
+.github
+
+# Local env/secrets
+.env
+.env.*
+
+# Node / JS build artifacts
+node_modules
+dist
+build
+.vite
+.cache
+.npm
+
+# Test/lint artifacts
+coverage
+.eslintcache
+.jest-cache
+
+# Logs
+*.log
+
+# Editor/OS noise
+.DS_Store
+.vscode
+.idea

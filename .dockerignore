@@ -1,9 +1,33 @@
 .git
 .github
-**/node_modules
-**/dist
+
+# Local env/secrets
 **/.env
 **/.env.*
 **/.neon_local
-backend/logs
-backend/coverage
+
+# Node / JS build artifacts
+**/node_modules
+**/dist
+**/build
+**/.next
+**/.nuxt
+**/.vite
+**/.turbo
+**/.parcel-cache
+**/.cache
+**/.npm
+
+# Test/lint artifacts
+**/coverage
+**/.eslintcache
+**/.jest-cache
+
+# Logs
+**/logs
+**/*.log
+
+# Editor/OS noise
+**/.DS_Store
+**/.vscode
+**/.idea

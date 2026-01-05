@@ -1,42 +1,43 @@
 # Multi-stage Dockerfile for Node.js CoreCRM application
 
-# Base image with Node.js
-FROM node:18-alpine AS base
+# Use Debian slim to avoid slow/fragile native builds on Alpine (e.g., bcrypt)
+FROM node:18-slim AS deps
 
-# Set working directory
 WORKDIR /app
 
-# Copy package files
 COPY package*.json ./
+RUN npm ci --omit=dev --no-audit --no-fund
 
-# Install dependencies
-RUN npm ci --only=production && npm cache clean --force
 
-# Copy source code
+FROM node:18-slim AS production
+
+WORKDIR /app
+ENV NODE_ENV=production
+
+COPY --from=deps /app/node_modules ./node_modules
 COPY . .
 
-# Create non-root user for security
-RUN addgroup -g 1001 -S nodejs && \
-    adduser -S nodejs -u 1001
+USER node
 
-# Change ownership of the app directory
-RUN chown -R nodejs:nodejs /app
-USER nodejs
-
-# Expose the port
 EXPOSE 3000
 
-# Health check
 HEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 \
   CMD node -e "require('http').get('http://localhost:3000/health', (res) => { process.exit(res.statusCode === 200 ? 0 : 1) }).on('error', () => { process.exit(1) })"
 
-# Development stage
-FROM base AS development
-USER root
-RUN npm ci && npm cache clean --force
-USER nodejs
-CMD ["npm", "run", "dev"]
-
-# Production stage
-FROM base AS production
 CMD ["npm", "start"]
+
+
+FROM node:18-slim AS development
+
+WORKDIR /app
+
+COPY package*.json ./
+RUN npm ci --no-audit --no-fund
+
+COPY . .
+
+USER node
+
+EXPOSE 3000
+
+CMD ["npm", "run", "dev"]

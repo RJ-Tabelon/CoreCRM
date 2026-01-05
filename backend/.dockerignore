@@ -1,0 +1,28 @@
+.git
+.github
+
+# Local env/secrets
+.env
+.env.*
+.neon_local
+
+# Node / JS build artifacts
+node_modules
+dist
+build
+.cache
+.npm
+
+# Test/lint artifacts
+coverage
+.eslintcache
+.jest-cache
+
+# Logs
+logs
+*.log
+
+# Editor/OS noise
+.DS_Store
+.vscode
+.idea
