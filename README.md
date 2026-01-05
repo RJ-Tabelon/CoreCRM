@@ -630,3 +630,13 @@ GET /api/contacts?q=Acme
   "count": 1
 }
 ```
+
+## 12. CI/CD (GitHub Actions)
+
+GitHub Actions workflows live under [.github/workflows](.github/workflows).
+
+Workflow: [.github/workflows/lint-and-format.yml](.github/workflows/lint-and-format.yml) — Runs on pushes and PRs for `main`/`staging` to keep backend code quality consistent. It installs backend dependencies and checks linting and formatting; if issues are found, the workflow fails.
+
+Workflow: [.github/workflows/tests.yml](.github/workflows/tests.yml) — Runs on pushes and PRs for `main`/`staging` to execute the backend Jest test suite. It uses a test database connection string from GitHub Secrets and uploads the backend coverage directory as a downloadable artifact for visibility.
+
+Workflow: [.github/workflows/docker-build-and-push.yml](.github/workflows/docker-build-and-push.yml) — Runs on `main` (or manually) to build and release Docker images, then deploy them to an EC2 host. It builds the backend and frontend image. After that, it pushes both images to Docker Hub as `latest`. Then it SSHs into the EC2 instance, logs into Docker Hub, pulls the latest images, and restarts the containers with `docker compose up -d`.
