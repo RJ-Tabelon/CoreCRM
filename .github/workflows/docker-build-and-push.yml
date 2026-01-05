@@ -4,8 +4,6 @@ on:
   push:
     branches:
       - main
-    tags:
-      - 'v*.*.*'
   workflow_dispatch:
 
 jobs:
@@ -41,25 +39,13 @@ jobs:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
 
-      - name: Extract metadata
-        id: meta
-        uses: docker/metadata-action@v5
-        with:
-          images: ${{ secrets.DOCKER_USERNAME }}/${{ matrix.image }}
-          tags: |
-            type=sha,format=short
-            type=raw,value=latest,enable={{is_default_branch}}
-            type=ref,event=tag,enable={{is_tag}}
-            type=semver,pattern={{version}},enable={{is_tag}}
-
       - name: Build and push Docker image (${{ matrix.service }})
         uses: docker/build-push-action@v5
         with:
           context: ${{ matrix.context }}
           file: ${{ matrix.dockerfile }}
           push: true
-          tags: ${{ steps.meta.outputs.tags }}
-          labels: ${{ steps.meta.outputs.labels }}
+          tags: ${{ secrets.DOCKER_USERNAME }}/${{ matrix.image }}:latest
           platforms: linux/amd64
           provenance: false
           sbom: false
@@ -70,7 +56,7 @@ jobs:
     name: Deploy to EC2
     needs: build-and-push
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/main' || startsWith(github.ref, 'refs/tags/')
+    if: github.ref == 'refs/heads/main'
 
     steps:
       - name: Deploy via SSH (docker compose pull/up)
@@ -78,35 +64,25 @@ jobs:
         env:
           DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
           DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
-          GIT_REF_TYPE: ${{ github.ref_type }}
-          REF_NAME: ${{ github.ref_name }}
-          SHA: ${{ github.sha }}
           PUBLIC_HOST: ${{ secrets.EC2_HOST }}
         with:
           host: ${{ secrets.EC2_HOST }}
           username: ${{ secrets.EC2_USER }}
           key: ${{ secrets.EC2_SSH_PRIVATE_KEY }}
           port: ${{ secrets.EC2_SSH_PORT || '22' }}
-          envs: DOCKER_USERNAME,DOCKER_PASSWORD,GIT_REF_TYPE,REF_NAME,SHA,PUBLIC_HOST
+          envs: DOCKER_USERNAME,DOCKER_PASSWORD,PUBLIC_HOST
           script: |
             set -euo pipefail
 
             cd ~/core-crm
 
-            if [ "$GIT_REF_TYPE" = "tag" ]; then
-              IMAGE_TAG="$REF_NAME"
-            else
-              IMAGE_TAG="${SHA:0:7}"
-            fi
-
-            printf "DOCKER_USERNAME=%s\nIMAGE_TAG=%s\n" "$DOCKER_USERNAME" "$IMAGE_TAG" > .env
+            printf "DOCKER_USERNAME=%s\nIMAGE_TAG=latest\n" "$DOCKER_USERNAME" > .env
 
             echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
 
             docker compose pull
             docker compose up -d --remove-orphans
 
-            # Optional housekeeping. Safe on single-host deployments where you don't roll back often.
             docker image prune -f
 
             docker compose ps
