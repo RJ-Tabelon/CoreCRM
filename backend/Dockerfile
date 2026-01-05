@@ -17,6 +17,8 @@ ENV NODE_ENV=production
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
 
+RUN mkdir -p /app/logs && chown -R node:node /app
+
 USER node
 
 EXPOSE 3000
