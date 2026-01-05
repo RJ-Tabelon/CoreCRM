@@ -1,15 +1,13 @@
-# CoreCRM
+# Docker (Dev/Prod)
 
-## Docker (Dev/Prod)
-
-### Prereqs
+## Prereqs
 
 - Docker Desktop
 - Configure env files (no manual swapping):
   - `.env.development` for dev
   - `.env.production` for prod
 
-### Development
+## Development
 
 Run Neon Local + backend (hot reload) + frontend (Vite HMR):
 
@@ -39,7 +37,7 @@ Run Drizzle migrations:
 docker compose -p corecrm-dev --env-file .env.development -f docker-compose.dev.yml exec backend npm run db:migrate
 ```
 
-### Production
+## Production
 
 Build frontend and serve via Nginx, reverse-proxying `/api` to the backend:
 
@@ -64,7 +62,7 @@ Run Drizzle migrations (targets your Neon Cloud `DATABASE_URL`):
 docker compose -p corecrm-prod --env-file .env.production -f docker-compose.prod.yml exec backend npm run db:migrate
 ```
 
-### Troubleshooting
+## Troubleshooting
 
 - Ports in use: stop conflicting processes or change host ports in compose (`3000`, `5173`, `5432`, `80`).
 - Vite not reachable: ensure it binds to `0.0.0.0` (handled by the container command) and port `5173` is published.
